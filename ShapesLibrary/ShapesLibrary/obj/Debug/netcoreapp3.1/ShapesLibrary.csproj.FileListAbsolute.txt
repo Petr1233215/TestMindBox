@@ -1,8 +1,0 @@
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\bin\Debug\netcoreapp3.1\ShapesLibrary.deps.json
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\bin\Debug\netcoreapp3.1\ShapesLibrary.dll
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\bin\Debug\netcoreapp3.1\ShapesLibrary.pdb
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\obj\Debug\netcoreapp3.1\ShapesLibrary.AssemblyInfoInputs.cache
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\obj\Debug\netcoreapp3.1\ShapesLibrary.AssemblyInfo.cs
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\obj\Debug\netcoreapp3.1\ShapesLibrary.csproj.CoreCompileInputs.cache
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\obj\Debug\netcoreapp3.1\ShapesLibrary.dll
-E:\Projects\c#\myProject\usually_c#\TestMindBox\ShapesLibrary\ShapesLibrary\obj\Debug\netcoreapp3.1\ShapesLibrary.pdb
