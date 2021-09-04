@@ -1,0 +1,6 @@
+Select Products.name as "Имя Продукта", Categories.name as "Имя категории"
+from Products
+Left Join ProductsCategories PC
+	ON Products.Id = PC.ProductId
+Left Join Categories
+	On Categories.Id = PC.CategoryId
