@@ -21,9 +21,6 @@ namespace ShapesLibrary.Shapes
 
 		public TriangleStructure(double a, double b, double c)
 		{
-			if(a < 0 || b < 0 || c < 0)
-				throw new ArgumentOutOfRangeException("Стороны треугольника не могут быть отрицательными");
-
 			A = a;
 			B = b;
 			C = c;

@@ -1,4 +1,5 @@
 ﻿using ShapesLibrary.Shapes;
+using System;
 
 namespace ShapesLibrary.ShapeCreator
 {
@@ -8,6 +9,10 @@ namespace ShapesLibrary.ShapeCreator
 
 		public TriangleCreator(TriangleStructure triangleStructure)
 		{
+
+			if (triangleStructure.A < 0 || triangleStructure.B < 0 || triangleStructure.C < 0)
+				throw new ArgumentOutOfRangeException("Стороны треугольника не могут быть отрицательными");
+
 			TriangleStructure = triangleStructure;
 		}
 

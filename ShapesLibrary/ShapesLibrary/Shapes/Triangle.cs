@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Linq;
 
 namespace ShapesLibrary.Shapes
 {
-	public class Triangle : IShape, ITriangle
+	public class Triangle : IShape
 	{
 		private TriangleStructure StructTriangle { get; set; }
 
@@ -18,27 +19,17 @@ namespace ShapesLibrary.Shapes
 			return Math.Sqrt(perimeter * (perimeter - StructTriangle.A) * (perimeter - StructTriangle.B) * (perimeter - StructTriangle.C));
 		}
 
+		/// <summary>
+		/// Метод определяющий является ли треугольник прямоугольным
+		/// </summary>
+		/// <returns></returns>
 		public bool CheckRectangular()
 		{
-			double maxSide;
-			double sumOtherSide;
-			if (StructTriangle.A > StructTriangle.B && StructTriangle.A > StructTriangle.C)
-			{
-				maxSide = Math.Pow(StructTriangle.A, 2);
-				sumOtherSide = Math.Pow(StructTriangle.B, 2) + Math.Pow(StructTriangle.C, 2);
-			}
-			else if (StructTriangle.B > StructTriangle.A && StructTriangle.B > StructTriangle.C)
-			{
-				maxSide = Math.Pow(StructTriangle.B, 2);
-				sumOtherSide = Math.Pow(StructTriangle.A, 2) + Math.Pow(StructTriangle.C, 2);
-			}
-			else
-			{
-				maxSide = Math.Pow(StructTriangle.C, 2);
-				sumOtherSide = Math.Pow(StructTriangle.A, 2) + Math.Pow(StructTriangle.B, 2);
-			}
+			var arraySides = new double[] { StructTriangle.A, StructTriangle.B, StructTriangle.C };
+			var hypotenuse = arraySides.Max();
+			var cathetusSides = arraySides.Where(c => c != hypotenuse);
 
-			return maxSide == sumOtherSide;
+			return Math.Pow(hypotenuse, 2) == cathetusSides.Aggregate((a, b) => Math.Pow(a,2) + Math.Pow(b, 2));
 		}
 	}
 }
